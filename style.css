@@ -1,4 +1,44 @@
-h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    border-left: 8px solid #0066CC;
+@font-face {
+    font-family: funnyFont;
+    src: url(files/fonts/Mojang-Regular.ttf);
+ }
+
+ body {
+     margin: 0px;
+     padding: 0px;
+     background: linear-gradient(249deg, #15ffeb, #8000ff, #00ff4c, #2c72ff);
+     background-size: 800% 800%;
+ 
+     animation: fart 47s ease infinite;
+ }
+ 
+ @keyframes fart {
+     0%{background-position:0% 51%}
+     50%{background-position:100% 50%}
+     100%{background-position:0% 51%}
+ }
+
+.hg-maintitle {
+    font-family: funnyFont;
+    font-size: 26px;
+    text-align: center;
+}
+
+#prl {
+    background-image: url(files/hgdiv-bg.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    border-style: solid;
+    border-color: white;
+    border-width: 10px 0px 10px 0px;
+}
+
+.hg-sect-1 {
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
