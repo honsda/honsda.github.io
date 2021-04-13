@@ -25,7 +25,7 @@
 }
 
 #prl {
-    background-image: url(files/hgdiv-bg.png);
+    background-image: url(files/images/hgdiv-bg.png);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -42,3 +42,89 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.hg-div-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.8fr 1.4fr 0.8fr 0.4fr;
+    gap: 0px 40px;
+    grid-template-areas:
+      ". . title . ."
+      ". fart main-fart fart2 ."
+      ". fart main-fart fart2 ."
+      ". . . . .";
+    box-shadow: 0px 0px 18px #ffffff;
+  }
+.hg-div-grid .title {
+    margin-top: 20%;
+    grid-area: title; 
+}
+
+.hg-div-grid .title p {
+    padding: 10px;
+    text-align:center;
+    border-radius: 5px;
+    background-color: black;
+    font-family: funnyFont;
+    font-size: 24px;
+    color: white;
+    text-shadow: 0px 0px 18px #ffffff;
+}
+.hg-div-grid .fart {
+    grid-area: fart; 
+     background: white;
+    border-radius: 5px;
+    padding:5px;
+    background-image: url(./files/images/honsbot.png);
+    background-size: 50% 38%;
+    background-position: 50% 15%;
+    background-repeat: no-repeat;
+    transition: box-shadow 0.5s;
+}
+.hg-div-grid .fart2 {
+    grid-area: fart2; 
+    background: white;
+    border-radius: 5px;
+    padding:5px;
+    background-image: url(./files/images/oawikibot.png);
+    background-size: 50% 38%;
+    background-position: 50% 15%;
+    background-repeat: no-repeat;
+    transition: box-shadow 0.5s;
+}
+
+.hg-div-grid .main-fart {
+    grid-area: main-fart; 
+    background: white;
+    border-radius: 5px;
+    padding:5px;
+    background-image: url(./files/images/homseHome.png);
+    background-size: 50% 38%;
+    background-position: 50% 15%;
+    background-repeat: no-repeat;
+    transition: box-shadow 0.5s;
+}
+
+.hg-div-grid .main-fart:hover {
+    box-shadow: 0px 0px 18px #ffffff;
+}
+.hg-div-grid .fart2:hover {
+    box-shadow: 0px 0px 18px #ffffff;
+}
+.hg-div-grid .fart:hover {
+    box-shadow: 0px 0px 18px #ffffff;
+}
+.hg-div-grid .hg-p1 #fart {
+    margin-top: 70%;
+    text-align:center;
+    font-family: funnyFont;
+    font-size: 20px
+}
+.hg-div-grid .hg-mp1 {
+    text-align:center;
+    font-family: funnyFont;
+    font-size: 12px
+}
+
+
+  
