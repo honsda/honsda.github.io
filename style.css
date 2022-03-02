@@ -298,5 +298,19 @@ tr#joetab>td>img {
     color: white;
   }
 
+/*SCROLL*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #10101a; 
+}
+::-webkit-scrollbar-thumb {
+    background: #24243d;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #2c2c4d; 
+}
+
 
   
