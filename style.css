@@ -93,22 +93,24 @@
     grid-area: title; 
 }
 /*thanks stackoverflow im lazy*/
-@keyframes slideInFromLeft {
+@keyframes amog {
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
 #titlem {
-    animation: 2s ease-out 0s 1 slideInFromLeft;
+    animation: 2s ease-out 0s 1 amog;
 }
 
 .snowflake {
     pointer-events: none;
     width: 0.5em;
     height: 0.5em;
-    background-color: #fff;
+    background-color: rgb(210, 214, 255);
+    border-radius: 25%;
     opacity: 30%;
 }
-@-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%{-webkit-transform:translateX(0px);transform:translateX(0px)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}100%{-webkit-transform:translateX(0px);transform:translateX(0px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}
+@-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}
+@-webkit-keyframes snowflakes-shake{0%{-webkit-transform:translateX(0px);transform:translateX(0px)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}100%{-webkit-transform:translateX(0px);transform:translateX(0px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}
 
 .hg-div-grid .title p {
     padding: 10px;
@@ -120,24 +122,24 @@
     text-shadow: 0px 0px 18px #ffffff;
 }
 .hg-div-grid .fart {
-    grid-area: fart; 
-     background: white;
+    grid-area: fart;
+    background: white;
     border-radius: 5px;
     padding:5px;
     background-image: url(./files/images/honsbot.png);
     background-size: 55%;
-    background-position: 50% 85%;
+    background-position: 50% 95%;
     background-repeat: no-repeat;
     transition: box-shadow 0.5s;
 }
 .hg-div-grid .fart2 {
-    grid-area: fart2; 
+    grid-area: fart2;
     background: white;
     border-radius: 5px;
     padding:5px;
     background-image: url(./files/images/oawikibot.png);
     background-size: 55%;
-    background-position: 50% 85%;
+    background-position: 50% 95%;
     background-repeat: no-repeat;
     transition: box-shadow 0.5s;
 }
@@ -149,7 +151,7 @@
     padding:5px;
     background-image: url(./files/images/homseHome.png);
     background-size: 55%;
-    background-position: 50% 85%;
+    background-position: 50% 95%;
     background-repeat: no-repeat;
     transition: box-shadow 0.5s;
 }
@@ -171,7 +173,7 @@
 .hg-div-grid .hg-mp1 {
     text-align:center;
     font-family: nunitodic;
-    font-size: 12px
+    font-size: 12px;
 }
 
 .audmin {
@@ -283,6 +285,9 @@ tr#joetab>td>img {
     background-color: #1b1b31;
     border-bottom: solid 8px #222241;
     box-shadow: 0px 0px 5px #222241;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
 }
 .nav-bar {
     display: inline-block;
@@ -313,7 +318,43 @@ tr#joetab>td>img {
 .nav-elm:hover {
     background-color: #22223d;
     color: white;
-  }
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9bb;
+  min-width: 160px;
+  box-shadow: 18px #101216;
+  z-index: 1;
+  border-radius: 25px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-family: nunitodic;
+  border-radius: 0px;
+  transition: 0.5s;
+}
+.dropdown-content a:only-child {
+    border-radius: 25px !important;
+}
+.dropdown-content a:first-child {
+    border-radius: 25px 25px 0px 0px;
+}
+.dropdown-content a:last-child {
+    border-radius: 0px 0px 25px 25px;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 /*SCROLL*/
 ::-webkit-scrollbar {
