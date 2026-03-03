@@ -98,7 +98,7 @@
   });
 </script>
 
-<div class="mt-12 w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-start opacity-0 animate-fade-in-up animation-delay-400 fill-mode-forwards">
+<div class="mt-12 w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-start opacity-0 animate-fade-in-up fill-mode-forwards">
   <!-- Left side: CMD Prompt -->
   <div class="flex flex-col gap-6">
     <div class="bg-[#0e0f14] rounded-2xl border border-white/5 p-6 md:p-10 font-mono shadow-[0_20px_50px_rgba(0,0,0,0.5)] min-h-[300px] md:min-h-[320px] flex flex-col items-start relative group">
