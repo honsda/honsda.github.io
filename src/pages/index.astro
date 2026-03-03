@@ -1,8 +1,23 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.svelte';
+import CmdPrompt from '../components/CmdPrompt.svelte';
 ---
 
 <Layout>
-	<Card client:load />
+	<div class="opacity-0 animate-fade-in-up fill-mode-forwards">
+		<p class="text-xl md:text-2xl font-normal text-slate-500 mb-2">
+			welcome to
+		</p>
+		<h1 class="text-5xl md:text-7xl font-bold tracking-tight text-white leading-tight pl-4 md:pl-8">
+			honsda<span class="text-slate-600 font-medium">.github.io</span>
+		</h1>
+	</div>
+
+	<CmdPrompt client:load />
 </Layout>
+
+<style>
+	.fill-mode-forwards {
+		animation-fill-mode: forwards;
+	}
+</style>
