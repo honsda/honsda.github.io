@@ -1,24 +1,10 @@
 <script>
   import { onMount } from 'svelte';
+  import content from '../data/content.json';
   
   let selectedIndex = 0;
-  const options = ['about', 'projects', 'socials'];
+  const options = Object.keys(content);
   $: selected = options[selectedIndex];
-
-  const content = {
-    about: {
-      title: "About Me",
-      body: "I'm a developer building things on the web. Passionate about clean code and minimalist design. I enjoy turning complex problems into simple, beautiful, and intuitive solutions."
-    },
-    projects: {
-      title: "My Projects",
-      body: "Working on various open-source projects and personal experiments. From low-level systems to high-level UI components, I love exploring the full stack."
-    },
-    socials: {
-      title: "Connect with Me",
-      body: "I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions. Find me on GitHub, Twitter, or LinkedIn."
-    }
-  };
 
   let typedTitle = "";
   let typedBody = "";
@@ -81,6 +67,8 @@
     }
   }
 
+  let memoryUsage = 442;
+
   function updateSizes() {
     const isMobile = window.innerWidth < 768;
     baseHeight = isMobile ? 2 : 2.5;
@@ -91,9 +79,17 @@
     updateSizes();
     window.addEventListener('keydown', handleKeydown);
     window.addEventListener('resize', updateSizes);
+
+    const memInterval = setInterval(() => {
+      const base = 440;
+      const fluctuation = Math.random() * 40;
+      memoryUsage = Math.floor(base + fluctuation);
+    }, 1500);
+
     return () => {
       window.removeEventListener('keydown', handleKeydown);
       window.removeEventListener('resize', updateSizes);
+      clearInterval(memInterval);
     };
   });
 </script>
@@ -118,6 +114,10 @@
       <div class="w-full space-y-2 mb-auto pt-4 md:pt-6">
         <p class="text-slate-600 text-[9px] md:text-[10px] tracking-wider uppercase">honsdaOS ver.1.0 - stuff</p>
         <p class="text-white text-xs md:text-sm font-bold">what do you want to see?</p>
+        <div class="flex items-center gap-2 text-[8px] md:text-[9px] font-mono text-emerald-500/40 uppercase tracking-[0.2em] pt-1">
+          <span class="w-1 h-1 rounded-full bg-emerald-500/40 animate-pulse"></span>
+          <span>MEM_USAGE: {memoryUsage}MB / 1024MB</span>
+        </div>
       </div>
 
       <!-- Command Prompt -->

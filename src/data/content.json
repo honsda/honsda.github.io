@@ -1,0 +1,14 @@
+{
+  "about": {
+    "title": "About Me",
+    "body": "I'm a developer building things on the web. Passionate about clean code and minimalist design. I enjoy turning complex problems into simple, beautiful, and intuitive solutions."
+  },
+  "projects": {
+    "title": "My Projects",
+    "body": "Working on various open-source projects and personal experiments. From low-level systems to high-level UI components, I love exploring the full stack."
+  },
+  "socials": {
+    "title": "Connect with Me",
+    "body": "I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions. Find me on GitHub, Twitter, or LinkedIn."
+  }
+}
